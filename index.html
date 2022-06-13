@@ -10,23 +10,31 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
-    <div class="jumbotron text-center">
+    <div class="jumbotron text-center bg-primary">
         <h1>Weather Dashboard</h1>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-3">Search for a City:<input id="city" placeholder="City"></div>
-            <div class="col-9">Display</div>
+            <div class="col-3">Search for a City:<input id="cityInput" type="text" placeholder="City" class="btn btn-primary">
+              <button>Submit</button></div>
+            <div class="col-lg-9">
+                <div id="currentSearch">
+                    <h2 class="city-name" id="currentSearch"></h2>
+                    <p>Temperature:<span class="currentSearch" id="temperature"></span></p>
+                    <p>Humidity:<span class="currentSearch" id="humidity"></span></p>
+                    <p>Wind Speed:<span class="currentSearch" id="windSpeed"></span></p>
+                    <p>UV Index:<span class="currentSearch" id="uvIndex"></span></p>
+                </div>Display Current Weather</div>
             <div class="col-3">space holder</div>
             <div class="col-9">
                 <h3>5 Day Forecast</h3>
             </div>
             <div class="col-3">space holder</div>
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-            <div class="col">5</div>
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
         </div>
     </div>
     
